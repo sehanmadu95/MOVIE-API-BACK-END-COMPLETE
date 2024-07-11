@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: Movie
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/MovieAPI?createDatabaseIfNotExist=true&useSSL=false
+    password: admin
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "sehanmadushanka0714@gmail.com"
+    password: "xgnz ztny mgfx bcur"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+project:
+  poster: poster/
+  baseUrl: "http://localhost:8080"
+
+
+
+#springfox:
+#  documentation:
+#    swagger:
+#      v2:
+#        path: /api-docs
+
+  #C:/Users/sehan/Downloads/movie/img
+  #poster/
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: DEBUG
+#        boot: DEBUG
+#      hibernate:
+#        sql: DEBUG
+#        type:
+#          descriptor:
+#            sql: TRACE
+
